@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<link rel="stylesheet" href="~/css/about.css" />
+
+<div class="about-section">
+    <h1>Despre noi</h1>
+    <br/>
+    <p>Aceasta aplicatie web a aparut datorita pasiunii pentru micile bijuteri ale Japoniei , cat si frumusetea culturii sale.</p>
+    <p>Cu ajutorul acestei aplicatii , poti descoperii o gama larga de bijuterii de toate felurile.</p>
+</div>
+
+<h2 style="text-align:center">Our Team & Our Products</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../images/andreea.jpg" alt="Andreea" style="width:100%">
+            <div class="container">
+                <h2>Andreea Draghici</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Andreea este pasionata de tehnologie, o fire curiosa si careia ii place sa lucreze cat mai optim si organizat.</p>
+                <p>draghici108@gmail.com</p>
+                <p><button class="button" onclick="location.href='@Url.Action("contact","Home")'">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../images/claudia.jpg" alt="Claudia" style="width:100%">
+            <div class="container">
+                <h2>Claudia Ciontu</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>ciontuclaudia02gmail.com</p>
+                <p><button class="button" onclick="location.href='@Url.Action("contact","Home")'">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+     <div class="column">
+        <div class="card">
+            <img src="../images/about.jpg" alt="Claudia" style="width:100%">
+            <div class="container">
+                <h2>Scopul aplicatiei</h2>
+                <p class="title">Our Products</p>
+                <p>Poti descoperii o gama larga de bijuterii de toate felurile.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,51 @@
+﻿@model JueriOnlineShop.Models.Produs
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<link rel="stylesheet" href="~/css/editare-produs.css" />
+<h1 class="alert alert-info">Editare produs</h1>
+
+<hr />
+<div class="produsAdmin">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="idProdus" />
+            <div class="form-group">
+                <label asp-for="numeProdus" class="control-label"></label>
+                <input asp-for="numeProdus" class="form-control" />
+                <span asp-validation-for="numeProdus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descriereProdus" class="control-label"></label>
+                <input asp-for="descriereProdus" class="form-control" />
+                <span asp-validation-for="descriereProdus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pretProdus" class="control-label"></label>
+                <input asp-for="pretProdus" class="form-control" />
+                <span asp-validation-for="pretProdus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="photoURL" class="control-label"></label>
+                <input asp-for="photoURL" class="form-control" />
+                <span asp-validation-for="photoURL" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Salveaza" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<br/>
+<div>
+    <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu produse</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

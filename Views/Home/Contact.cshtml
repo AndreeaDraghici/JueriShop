@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+
+<link rel="stylesheet" href="~/css/contact.css" />
+
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>Contacteaza-ne</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+            <img src="../images/contact.jpg" style="width:100%">
+    </div>
+
+    <div class="column">
+
+      <form action="https://formsubmit.co/juerishop2022@gmail.com" method="POST" enctype="multipart/form-data">
+
+        <label for="fname" class="alert alert-info">Nume</label>
+        <input type="text" id="fname" name="nume" placeholder="Numele tau.."required>
+
+        <label for="lname" class="alert alert-info">Prenume</label>
+        <input type="text" id="lname" name="prenume" placeholder="Prenumele tau.." required>
+
+        <label for="country" class="alert alert-info">Tara</label>
+        <select id="country" name="tara" >
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="romania">Romania</option>
+          <option value="germania">Germania</option>
+        </select>
+
+        <label for="subject" class="alert alert-info">Subiect</label>
+        <textarea id="subject" name="subiect" placeholder="Lasa un mesaj.." style="height:170px" required></textarea>
+
+        <input type="submit" value="Trimite">
+
+      </form>
+
+    </div>
+  </div>
+</div>

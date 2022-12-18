@@ -1,0 +1,36 @@
+﻿@model JueriOnlineShop.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.prenume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.prenume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.parola)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.parola)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.idUser">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,40 @@
+﻿@model JueriOnlineShop.Models.Review
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<link rel="stylesheet" href="~/css/reviews.css" />
+<h1 class="alert alert-info">Editeaza acest review</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="idReview" />
+            <div class="form-group">
+                <label asp-for="detalii" class="control-label"></label>
+                <input asp-for="detalii" class="form-control" />
+                <span asp-validation-for="detalii" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="date" class="control-label"></label>
+                <input asp-for="date" class="form-control" />
+                <span asp-validation-for="date" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Salveaza" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu review-uri</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

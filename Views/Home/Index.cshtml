@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/tabel-produse.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body {
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+        font-family: "Lucida Console", "Courier New", monospace;
+        background-image: url(../images/home.jpg);
+    }
+</style>
+
+<div class="text-center">
+     <hr/>
+    <marquee class="text" width="50%" direction="left" height="60px" bgcolor="aqua" class="marquee" ;>
+         <h1 class="display-4">Bun venit pe site!</h1>
+    </marquee>
+     <hr/>
+   <br/>
+</div>
+<br />
+<br/>
+<br/>
+<br />
+<br />
+<div id="detalii">
+	    <div>Aceasta aplicatie web a aparut datorita pasiunii pentru micile bijuteri ale Japoniei , cat si frumusetea culturii sale. 
+            Atat denumirea in sine reprezinta tema (Jueri in japoneza semnificand Bijuterie) , cat si produsele.</div>
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="row">
+    <div class="col">
+        <button style="position:center;
+           display: inline-block;
+           cursor: pointer;
+           text-align: center;
+           outline: 1px;
+           color: black;
+           font-weight: bold;
+           text-transform: uppercase;
+           background-color: green;
+           border: none;
+           border-radius: 10px;
+           box-shadow: 0 7px #CCCCCC;" type="button" onclick="location.href='@Url.Action("index","Produs")'">Spre produse
+        </button>
+    </div>
+</div>

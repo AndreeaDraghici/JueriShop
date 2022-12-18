@@ -1,0 +1,31 @@
+﻿@model JueriOnlineShop.Models.Review
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link rel="stylesheet" href="~/css/stergere-review.css" />
+
+<h3 class="alert alert-info">Esti sigur ca vrei sa stergi acest review?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.detalii)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.detalii)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.date)
+        </dd>
+    </dl>
+    <br />
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="idReview" />
+        <input type="submit" value="Sterge" class="btn btn-danger" /> |
+        <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu review-uri</a>
+    </form>
+</div>

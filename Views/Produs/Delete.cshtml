@@ -1,0 +1,42 @@
+﻿@model JueriOnlineShop.Models.Produs
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link rel="stylesheet" href="~/css/stergere-produs.css" />
+<h3 class="alert alert-info">Esti sigur ca vrei sa stergi acest produs?</h3>
+<div class="">
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.numeProdus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.numeProdus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.descriereProdus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.descriereProdus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.pretProdus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.pretProdus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.photoURL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.photoURL)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="idProdus" />
+        <input type="submit" value="Sterge" class="btn btn-danger" /> | 
+        <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu produse</a>
+    </form>
+</div>
