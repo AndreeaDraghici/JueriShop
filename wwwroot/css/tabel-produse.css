@@ -1,0 +1,29 @@
+﻿body {
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-image: url(../images/home-background.jpg);
+}
+
+h1, h2, h3,h4 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    background-position: center center;
+}
+
+.form-group {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: purple;
+}
+
+td, tr {
+    text-align: center;
+    vertical-align: middle;
+}
+

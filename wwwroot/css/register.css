@@ -1,0 +1,64 @@
+﻿body {
+    background-image: url(../images/register-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+h1, h2, h3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    background-position: center center;
+}
+
+.form-group {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: purple;
+}
+
+.shop {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    background-color: yellow;
+    color: black;
+    transition: opacity 0.15s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border-color: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn:active {
+        opacity: 0.3;
+    }
+
+.myregisterclass {
+    position: center center;
+    padding: 22px;
+    border-radius: 6px;
+    background: Aquamarine;
+  
+}
+
