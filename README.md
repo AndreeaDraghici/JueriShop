@@ -1,0 +1,2 @@
+# JueriShop
+ECommerce Project
