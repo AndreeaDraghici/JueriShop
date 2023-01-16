@@ -1,0 +1,31 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Produs</th>
+            <th>Cantitate</th>
+            <th>Pret</th>
+            <th>Total</th>
+            <th>Actiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if(!Model.Any()){
+        <p>Cosul este gol</p>
+    }
+    else{
+
+        @foreach (var item in Model){
+                <tr>
+                    <td>@item.Produs.Nume</td>
+                    <td>@item.Cantitate</td>
+                    <td>@item.Produs.Pret</td>
+                    <td>@(item.Cantitate * item.Produs.Pret)</td>
+                    <td>
+                        <a asp-action="StergeProdusDinCos" asp-route-id="@item.idCos">Sterge</a>
+                    </td>
+                </tr>
+        }
+}
+    </tbody>
+</table>
+<p> Total de produse adaugate in cos : @ViewBag.TotalItemsInCart </p>
